@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form label{
+            display: block;
+            width: 50%;
+            padding: 2px;
+            font-weight: bold;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <h1><span>*Mandatory to fill</span></h1>
+   <form>
+    <label for="fname">Firstname:
+        <input type="text" id="fname"style="margin-left: 30px;"><span>*</span>
+    </label>
+    <label for="lname">Lastname:
+        <input type="text" id="lname"style="margin-left: 30px;">
+    </label>
+    <label for="bday">Birthday:
+        <input type="date" value="day"style="margin-left: 37px;">
+        <input type="month" value="month">
+        <input type="year" value="year">
+    </label>
+    <label for="uname">Username:
+        <input type="text" id="uname" style="margin-left: 28px;"><span>*</span>
+    </label>
+    <label for="email">E-mail:
+        <input type="email" id="fname"style="margin-left: 50px;"><span>*</span>
+    </label>
+    <label for="web">Website:
+        <input type="url" id="web"style="margin-left: 40px;"><span>*</span>
+    </label>
+    <label for="pword">Password:
+        <input type="password" id="pword"style="margin-left: 30px;"><span>*</span>
+    </label>
+    <label for="pword">Re-password:
+        <input type="password" id="pword"style="margin-left: 10px;"><span>*</span>
+    </label>
+    <label for="mark">
+        <input type="checkbox" name="mark" id="mark">
+        <span style="color: black;margin-left: 80px;">I agreed to the terms and conditions.</span>
+    </label>
+    <input type="submit" value="Sign up" style="background-color: black; color:white; margin-top: 20px;">
+   </form>
+</body>
+</html>
