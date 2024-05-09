@@ -15,9 +15,9 @@
             <div class="dropdown" id="dropdown">
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Become a reseller</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#banner">Services</a></li>
+                    <li><a href="#reseller">Become a reseller</a></li>
+                    <li><a href="#about_us">About Us</a></li>
                     <li id="reg_log">
                         <i class="bi bi-person-fill"></i>
                         <a href="#" onclick="showsignup()">Register</a></li>
@@ -32,14 +32,14 @@
             </div>
         </nav>
         <header>
-            <h2>Get the cheapest internet data bundle deals here!</h2>
+            <h2>Welcome To CodeFox!</h2>
             <div class="button">
                 <div class="login">
                     <a href="#">
                     <button class="icon-btn" onclick="showform()"><i class="bi bi-person-fill"></i>Login/Register</button>
                 </div>
                 <div class="login">
-                    <a href="#all-prices" style="transition: 0.5s ease-in-out;">
+                    <a href="#pricing" style="transition: 0.5s ease-in-out;">
                         <button class="icon-btn"><i class="bi bi-tags-fill"></i> See Pricing</button>
                     </a>
                 </div>
@@ -61,7 +61,7 @@
                         <i class="bi bi-eye" id="shown_eye" onclick="show_eye()"></i>
                         </label>
                         <a href="#">
-                            <button type="submit">Log In</button>
+                            <button type="submit"  style="margin-top:10px ;">Log In</button>
                         </a>
                         <a href="#" id="forget">
                             <p>forget password</p>
@@ -156,7 +156,8 @@
             </div>   
         </article>
         <!--Section-->
-        <section class="banner">
+        <h3 id="about_us">Services</h3><hr>
+        <section class="banner" id="banner">
             <div class="questions">
                 <div class="bulk" id="Automated1">
                     <img src="Img/bulk.jpeg" alt="bulk">
@@ -189,7 +190,27 @@
         <div class="plans">
             <span>"<em> In the bustling world of comerce, where ideas take flight and ventures flourish, enterpreneurs brave the tides of uncertainty, guided by the compass of innovation. Through trials and triumphs, they navigate the seas of opportunity, seeking to carve their mark in the annals of industry. with resislience as their anchor and vision as their sail, they chart the course towards prosperity fueled by passion, integrity and the relentless pursuit of excellence."</em></span></div>
         <section class="all-prices" id="all-prices">
-                <div class="pricing">
+            <h3 id="about_us">About Us</h3><hr>
+            <p id="sub_head">The best Plateform For Automated VTU Services</p>
+            <p>We offer Instant Recharge Of Airtime,Databundle, CableTV(DSTV,GOTV & Startimes),Electricity Bill Payment And More</p><br>
+            <h4 id="sub_head">Why To Choose Us</h4>
+            <ul class="advantages">
+                <li>We're Fast</li>
+                <li>Automated services</li>
+                <li>100% Secured</li>
+                <li>We're Reliable</li>
+                <li>Always Online</li>
+                <li>24/7 Customer Support</li>
+            </ul>
+            <h3>We Provide Awesome Services</h3>
+            <p>Some tasks can be challenging, but managing payments should not be among them. with CodeFox,paying for services you love becomes effortless, whether you're at home or in the office. Enjoy total convenience, swift service delivery and seamless payment experiences-all at your fingertips.
+                <img src="./Img/home-enterprise-2.png" alt=" become an agent" style="width: 300px; height:200px;border-radius: 0px; margin-left: 20px;">
+            <h3 id="reseller">Become A Reseller</h3><hr>
+            <p>Become part of our network of exceptional entrepreneurs collaborating with Codefox. Introduce the effortless "easy-payments" experience to your connections and earn commisions for every transaction you facilitate for your client. <br>
+            We provide our Referrers with top-notch referral program incentives to faster entrepreneurial and managerial skill acquisition, drive growth and development and empower students on higher education campuses and youth in the dispora. Ultimately, our goal is to promote technology adoption through the utilization of ICT tools in our society.
+            </p>
+            <button type="button" id="get_started">Get Started</button>
+                <div class="pricing" id="pricing">
                     <div class="MTN">
                         <h3>MTN</h3>
                         <p><span>&#8358</span>260/30days</p>
@@ -288,7 +309,7 @@
             <input type="tel" name="Telcos" placeholder="Phone num">
             </label>
             <label for="message">
-            <textarea name="message" id="message"  placeholder="Your message"cols="30" rows="10"></textarea>
+            <textarea name="message" id="message"  placeholder="Your message"cols="40" rows="10"></textarea>
             </label>
             <a href="#">
                 <button type="submit"><i class="bi bi-send"></i>Send Message</button>
@@ -300,7 +321,7 @@
             </div>
             <div class="services">
                 <h3>Services</h3>
-            <ul>
+            <ul class="footer_decription">
                 <li>Mobile data</li>
                 <li>Airtime (VTU top-up)</li>
                 <li>Pay TV subscriptions</li>
@@ -309,7 +330,7 @@
             </div>
             <div class="services">
                 <h3>About</h3>
-            <ul>
+            <ul class="footer_decription">
                 <li>Reseller Login</li>
                 <li>Become a Reseller</li>
                 <li>Privacy</li>
